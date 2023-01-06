@@ -2,7 +2,7 @@
 
 ## docs
 
-https://gamefi-stacks.gitbook.io/gamefistacks/lootbox-on-chain-m3/
+https://gamefi-stacks.gitbook.io/gamefistacks/lootbox-on-chain-m3/general-idea
 
 ## main points
 
