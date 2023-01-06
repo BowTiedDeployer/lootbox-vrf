@@ -1,0 +1,34 @@
+---
+id: 0
+name: Devnet deployment
+network: devnet
+stacks-node: "http://localhost:20443"
+bitcoin-node: "http://devnet:devnet@localhost:18443"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: nft-trait
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 4670
+            path: "contracts\\nft-trait.clar"
+            anchor-block-only: true
+        - contract-publish:
+            contract-name: background-item
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 51970
+            path: "contracts\\background-item.clar"
+            anchor-block-only: true
+        - contract-publish:
+            contract-name: lootbox-background
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 73750
+            path: "contracts\\lootbox-background.clar"
+            anchor-block-only: true
+        - contract-publish:
+            contract-name: send-lootbox
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 11900
+            path: "contracts\\send-lootbox.clar"
+            anchor-block-only: true
